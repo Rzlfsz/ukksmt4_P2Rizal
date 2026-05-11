@@ -232,7 +232,20 @@ return [
     |
     */
 
-    'custom_permissions' => [],
+    'custom_permissions' => [
+        // Transaksi (aksi khusus, bukan CRUD Resource)
+        'Transaksi:Masuk',
+        'Transaksi:Keluar',
+        'Transaksi:Pembayaran',
+        'Transaksi:CetakStruk',
+
+        // Laporan
+        'Laporan:RekapTransaksi',
+
+        // Pengajuan (aksi approval khusus)
+        'Pengajuan:Ajukan',
+        'Pengajuan:Approve',
+    ],
 
     /*
     |--------------------------------------------------------------------------
